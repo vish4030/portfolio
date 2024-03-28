@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*, ::after, ::before{ margin: 0; box-sizing: border-box;}
+
+/* html tags reset */
+a{text-decoration: none;}
+button{cursor: pointer; padding: 0;}
+ul{list-style: none; padding: 0;}
+label{display: block;}
+img{vertical-align: bottom;}
+
+
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+    font-size: 15px;
+    --ff: "Montserrat", sans-serif;
+    --ffl:"Lato", sans-serif;;
+    --sky-blue:#00a4ff;
+}
+
+body{font-size: 16px; font-family:var(--ff);}
+
+
+/* utility class */
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+    margin-left:180px;
+    padding: 0 1rem;
+
+}
+
+.row{display: flex; flex-flow: row wrap; margin: 0 -1rem;}
+[class^="col"]{flex: 1 0 auto; padding: 0 1rem;}
+
+.col-1{ flex-basis:8.33%; max-width: 8.33%;}
+.col-2{ flex-basis:16.66%; max-width: 16.66%;}
+.col-3{ flex-basis:25%; max-width: 25%;}
+.col-4{ flex-basis:33.33%; max-width: 33.33%;}
+.col-5{ flex-basis:41.66%; max-width: 41.66%;}
+.col-6{ flex-basis:50%; max-width: 50%;}
+.col-7{ flex-basis:58.33%; max-width: 58.33%;}
+.col-8{ flex-basis:66.66%; max-width: 66.66%;}
+.col-9{ flex-basis:75%; max-width: 75%;}
+.col-10{ flex-basis:83.33%; max-width: 83.33%;}
+.col-11{ flex-basis:91.66%; max-width: 91.66%;}
+.col-12{ flex-basis:100%; max-width: 100%;}
+
+.flex{ display: flex; }
+.justify-space-bet{ justify-content: space-between;}
+.justify-center{ justify-content: center;}
+.align-center{ align-items: center;}
+.gap{gap: 1rem;}
+
+.btn{border: none; border-radius: 10px; padding: 0.75rem 1.5rem; font: medium 1rem var(--ff);}
+.img-res{width: 100%; height: auto;}
+
+
+/* header */
+
+aside{ background: #1e1e2c; padding: 10px 0; color: #fff; position: fixed;
+    height: 100%; width: 180px;}
+aside ul{flex-flow: column wrap;}    
+aside a{color: #fff; display: block; padding: 10px 20px; border-radius: 5px;}
+aside a:hover{ background-color: #00a4ff;}
+
+aside .hamburger{ display: none; margin-left: 20px;}
+.hamburger span{flex-basis: 100%; margin-bottom: 5px; height: 10px; background: #e0196c; }
+.toggle-check{ display: none; position: absolute; top: 10px; width:100px; height: 40px; opacity: 0; z-index: 2;}
+
+
+
+/* banner */
+
+.banner{ background: #000; padding: 4rem 2rem; color: #fff;}
+.banner h2{ font-size: 3rem;}
+.banner #about-me{font-size: 3rem; padding-bottom: 10px;}
+
+/* about */
+
+.about{padding: 4rem 0; }
+.about .img-box{ width: 150px; height: 150px; margin: auto;}
+.about .img-box img{width: 100%; height: 100%; border-radius: 50%;}
+.about h2{font: 600 3rem var(--ff); color: #6e6c6c; text-align: center; margin-bottom: 1rem;}
+.about p{color: #6e6c6c; font: 400 17px/22px var(--ffl);} 
+
+
+/* Education */
+
+.education{background: #f2f2f2; padding: 3rem 0;}
+.education h2{ color: green; font: 600 3rem var(--ff); text-align: center; margin-bottom: 2rem;}
+.education .box{padding: 10px; background: #fff; border-radius: 10px;
+    margin: 0px auto 1rem auto; text-align: center; width: 80%;}  
+    
+    /* Projects */
+
+.project{padding: 3rem 0;}  
+.project h2{font: 600 3rem var(--ff); color: green; text-align: center; margin-bottom: 2rem; }  
+.project .project-box{border: 1px solid #979191; border-radius: 10px; text-align: center;}
+.project-box .img-box{width: 100%; height: 180px;}
+.project-box img{border-radius: 10px; height: 100%;}
+.project .project-box ul{padding:20px 10px;}
+.project-box li{ background: yellow; padding: 5px; border-radius: 5px;}
+.project-box h3{font-size: 1.5rem;}
+.project-box a{ display: inline-block; margin: 10px 0; padding: 10px 15px;
+    background: #ddd; color: #0e0e0e; font:400 16px var(--ff);}
+
+
+/* Tech Stacks */
+
+.tech{padding: 4rem 0px;}
+.tech h2{ color: green; font: 600 3rem var(--ff); text-align: center; margin-bottom: 2rem;}
+ .tech p{ text-align: center; padding: 10px 0 30px 0;}   
+ .tech .tech-box{padding: 10px; text-align: center; border: 1px solid #515050;
+    border-radius: 10px; margin-bottom: 10px; font-size: 22px;}
+
+/* Work Experience  */
+
+.work{ padding: 4rem 0; background:#f2f2f2; color: #2b2a2a;}
+.work h2{ color: green; font: 600 3rem var(--ff);  text-align: center; margin-bottom: 2rem;}
+
+/* contact */
+.contact{padding: 40px 0;}
+.contact .img-box{height: 100%;}
+.contact img{height: 100%;}
+
+.contact ul{align-items: center; gap: 2rem;}
+.contact a{ display: block; padding: 5px 10px; font-size: 2rem; color: #000; }
+
+.contact hr{width: 45%; display: inline-block;}
+.contact hr + span{display: inline-block; padding: 0 10px; vertical-align: middle;}
+
+.contact form input{width: 100%; padding: 5px; line-height: 22px; margin-top: 1.5rem;}
+.contact form textarea{margin-top: 1.5rem; width: 100%; padding: 5px; border-radius: 5px;}
+.contact form button{ width: 100%; text-align: center; background: #868484;color: #fff;}
+
+
+
+
+    @media screen and (max-width:1225px){
+        html{ font-size: 13px;}
+    }
+    
+    @media screen and (max-width:980px){
+        .col-t-1{ flex-basis: 8.33%; max-width: 8.33%;}
+        .col-t-2{ flex-basis: 16.66%; max-width: 16.66%;}
+        .cpl-t-3{ flex-basis: 25%; max-width: 25%;}
+        .col-t-4{ flex-basis: 33.33%; max-width: 33.33%;}
+        .col-t-5{ flex-basis: 41.66%; max-width: 41.66%;}
+        .col-t-6{ flex-basis: 50%; max-width: 50%;}
+        .col-t-7{ flex-basis:58.33%; max-width: 58.33%;}
+        .col-t-8{ flex-basis: 66.66%; max-width: 66.66%;}
+        .col-t-9{ flex-basis: 75%; max-width: 75%;}
+        .col-t-10{flex-basis:83.33%; max-width: 83.33%;}
+        .col-t-11{flex-basis: 91.66%; max-width: 91.66%;}
+        .col-t-12{flex-basis: 100%; max-width: 100%;}
+    }    
+
+    @media screen and (max-width:460px){
+
+        .col-mp-1{ flex-basis: 8.33%; max-width: 8.33%;}
+        .col-mp-2{ flex-basis: 16.66%; max-width: 16.66%;}
+        .cpl-mp-3{ flex-basis: 25%; max-width: 25%;}
+        .col-mp-4{ flex-basis: 33.33%; max-width: 33.33%;}
+        .col-mp-5{ flex-basis: 41.66%; max-width: 41.66%;}
+        .col-mp-6{ flex-basis: 50%; max-width: 50%;}
+        .col-mp-7{ flex-basis:58.33%; max-width: 58.33%;}
+        .col-mp-8{ flex-basis: 66.66%; max-width: 66.66%;}
+        .col-mp-9{ flex-basis: 75%; max-width: 75%;}
+        .col-mp-10{flex-basis:83.33%; max-width: 83.33%;}
+        .col-mp-11{flex-basis: 91.66%; max-width: 91.66%;}
+        .col-mp-12{flex-basis: 100%; max-width: 100%;}
+
+        .container{margin: auto;}
+        aside{width: 100%; position: sticky; top: 0; height: auto;}
+        aside .hamburger{display: flex; flex-flow: row wrap; width: 4rem} 
+        aside .nav{ display:none; position:absolute; top: 60px; left: 0; right: 0; background:#1e1e2c;}
+        aside .nav li{display: inline-block;}
+        .toggle-check{display: block;}
+        .toggle-check:checked+ul{display: flex;}
+
+    }
