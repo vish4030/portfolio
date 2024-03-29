@@ -1,4 +1,12 @@
 
+const text_tech =  document.querySelector('#text-tech');
+const tech_arr = ['Frontend Developer', 'React Developer']
+let flag = 0;
+setInterval(()=>{
+  text_tech.innerHTML = `${tech_arr[flag]} `
+  flag ? flag=0 : flag=1;
+},2000)
+
 
 let projects = document.querySelector(".projects");
 let project_arr = [{
