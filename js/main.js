@@ -24,7 +24,7 @@ let project_arr = [{
 {
     name:"Travel booking",
     tech:['HTML', 'CSS', 'JavaScript'],
-    url:['https://vish4030.github.io/travel-booking/',"https://github.com/vish4030/travel-booking" ],
+    url:['https://vish4030.github.io/travel-booking/',"https://vish4030.github.io/travelBooking/" ],
     img:"https://i.ibb.co/F7VJG7v/travel.png"
 },
 ]
