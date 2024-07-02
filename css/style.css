@@ -9,6 +9,7 @@ button{cursor: pointer; padding: 0;}
 ul{list-style: none; padding: 0;}
 label{display: block;}
 img{vertical-align: bottom;}
+h3{font-weight: 500;}
 
 
 
@@ -51,10 +52,10 @@ body{font-size: 16px; font-family:var(--ff);}
 .col-12{ flex-basis:100%; max-width: 100%;}
 
 .flex{ display: flex; }
-.justify-space-bet{ justify-content: space-between;}
+.justify-evn{ justify-content: space-evenly;}
 .justify-center{ justify-content: center;}
 .align-center{ align-items: center;}
-.gap{gap: 1rem;}
+
 
 .btn{border: none; border-radius: 10px; padding: 0.75rem 1.5rem; font: medium 1rem var(--ff);}
 .img-res{width: 100%; height: auto;}
@@ -77,7 +78,7 @@ aside .hamburger{ display: none; margin-left: 20px;}
 /* banner */
 
 .banner{ background: #000; padding: 4rem 2rem; color: #fff;}
-.banner h2{ font-size: 3rem;}
+.banner h2{ font-size: 3rem; font-weight: 400;}
 .banner #about-me{font-size: 3rem; padding-bottom: 10px;}
 
 /* about */
@@ -85,22 +86,24 @@ aside .hamburger{ display: none; margin-left: 20px;}
 .about{padding: 4rem 0; }
 .about .img-box{ width: 150px; height: 150px; margin: auto;}
 .about .img-box img{width: 100%; height: 100%; border-radius: 50%;}
-.about h2{font: 600 3rem var(--ff); color: #6e6c6c; text-align: center; margin-bottom: 1rem;}
+.about h2{font: 400 3rem var(--ff); color: #6e6c6c; text-align: center; margin-bottom: 1rem;}
 .about p{color: #6e6c6c; font: 400 17px/22px var(--ffl);} 
 
 
 /* Education */
 
 .education{background: #f2f2f2; padding: 3rem 0;}
-.education h2{ color: green; font: 600 3rem var(--ff); text-align: center; margin-bottom: 2rem;}
+.education h2{ color: green; font: 400 3rem var(--ff); text-align: center; margin-bottom: 2rem;}
 .education .box{padding: 10px; background: #fff; border-radius: 10px;
     margin: 0px auto 1rem auto; text-align: center; width: 80%;}  
+.education ul li{flex-basis:33.33%; max-width: 33.33%;}    
     
-    /* Projects */
+    
 
+    /* Projects */
 .project{padding: 3rem 0;}  
-.project h2{font: 600 3rem var(--ff); color: green; text-align: center; margin-bottom: 2rem; }  
-.project .project-box{border: 1px solid #979191; border-radius: 10px; text-align: center;}
+.project h2{font: 400 3rem var(--ff); color: green; text-align: center; margin-bottom: 2rem; }  
+.project .project-box{border: 1px solid #bdb9b9; border-radius: 10px; text-align: center;}
 .project-box .img-box{width: 100%; height: 180px;}
 .project-box img{border-radius: 10px; height: 100%;}
 .project .project-box ul{padding:20px 10px;}
@@ -113,15 +116,16 @@ aside .hamburger{ display: none; margin-left: 20px;}
 /* Tech Stacks */
 
 .tech{padding: 4rem 0px;}
-.tech h2{ color: green; font: 600 3rem var(--ff); text-align: center; margin-bottom: 2rem;}
+.tech h2{ color: green; font: 400 3rem var(--ff); text-align: center; margin-bottom: 2rem;}
  .tech p{ text-align: center; padding: 10px 0 30px 0;}   
  .tech .tech-box{padding: 10px; text-align: center; border: 1px solid #515050;
-    border-radius: 10px; margin-bottom: 10px; font-size: 22px;}
+    border-radius: 10px; margin-bottom: 10px; font-size: 22px; font-weight: 300;}
 
 /* Work Experience  */
 
-.work{ padding: 4rem 0; background:#f2f2f2; color: #2b2a2a;}
-.work h2{ color: green; font: 600 3rem var(--ff);  text-align: center; margin-bottom: 2rem;}
+.work{ padding: 4rem 0; background:#f2f2f2; color: #2b2a2a; text-align: center;}
+.work h2{ color: green; font: 400 3rem var(--ff);  text-align: center; margin-bottom: 2rem;}
+.work p{ padding: 1rem auto; color: gray; font-weight: 400;  }
 
 /* contact */
 .contact{padding: 40px 0;}
@@ -131,7 +135,7 @@ aside .hamburger{ display: none; margin-left: 20px;}
 .contact ul{align-items: center; gap: 2rem;}
 .contact a{ display: block; padding: 5px 10px; font-size: 2rem; color: #000; }
 
-.contact hr{width: 45%; display: inline-block;}
+.contact hr{width: 40%; display: inline-block;}
 .contact hr + span{display: inline-block; padding: 0 10px; vertical-align: middle;}
 
 .contact form input{width: 100%; padding: 5px; line-height: 22px; margin-top: 1.5rem;}
@@ -158,6 +162,7 @@ aside .hamburger{ display: none; margin-left: 20px;}
         .col-t-10{flex-basis:83.33%; max-width: 83.33%;}
         .col-t-11{flex-basis: 91.66%; max-width: 91.66%;}
         .col-t-12{flex-basis: 100%; max-width: 100%;}
+        .gap{gap: 1.5rem;}
     }    
 
     @media screen and (max-width:460px){
@@ -182,5 +187,7 @@ aside .hamburger{ display: none; margin-left: 20px;}
         aside .nav li{display: inline-block;}
         .toggle-check{display: block;}
         .toggle-check:checked+ul{display: flex;}
+        .education ul{flex-flow:column;}
+        .education ul li{flex-basis:100%; max-width: 100%;} 
 
     }

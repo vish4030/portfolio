@@ -36,7 +36,7 @@ setTimeout(()=>{
          <div class='img-box'>
            <img class='img-res' src='${ele.img}' alt='project-img' >
          </div>
-         <ul class="flex justify-space-bet">
+         <ul class="flex justify-evn">
             <li>${ele.tech[0]}</li>
             <li>${ele.tech[1]}</li>
             <li>${ele.tech[2]}</li>
