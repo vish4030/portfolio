@@ -9,7 +9,14 @@ setInterval(()=>{
 
 
 let projects = document.querySelector(".projects");
-let project_arr = [{
+let project_arr = [
+{
+    name:"Bus Ticket Booking",
+    tech:['React', 'Express', 'Mongodb'],
+    url:['https://ticketbook1.netlify.app/',"https://github.com/vish4030/BusTicket" ],
+    img:"https://i.ibb.co/xshFh8r/bus-Ticket.png"
+},
+{
     name:"Food Ordering Website",
     tech:['React', 'Express', 'Mongodb'],
     url:['https://foodvilla4030.netlify.app/',"https://github.com/vish4030/foodvilla" ],
@@ -24,9 +31,22 @@ let project_arr = [{
 {
     name:"Travel booking",
     tech:['HTML', 'CSS', 'JavaScript'],
-    url:['https://vish4030.github.io/travel-booking/',"https://github.com/vish4030/travel-booking" ],
+    url:['https://vish4030.github.io/travelBooking/',"https://github.com/vish4030/travelBooking/" ],
     img:"https://i.ibb.co/F7VJG7v/travel.png"
 },
+{
+  name:"Food Recipe Search",
+  tech:['HTML', 'CSS', 'JavaScript'],
+  url:['https://vish4030.github.io/foodRecipe/', 'https://github.com/vish4030/foodRecipe'],
+  img:"https://i.ibb.co/3pMMHDj/food-Recipe.png"
+},
+{
+  name:"Website Template",
+  tech:['HTML', 'CSS', 'JavaScript'],
+  url:['https://vish4030.github.io/website-templet/', 'https://github.com/vish4030/website-templet'],
+  img:"https://i.ibb.co/zmcNnqT/website-templete.png"
+}
+
 ]
 setTimeout(()=>{
   let projectBox="";
@@ -45,7 +65,7 @@ setTimeout(()=>{
           <a href="${ele.url[0]}" target="_blank" class="btn">View website</a>
           <a href="${ele.url[1]}" target="_blank" class="btn">View Code</a>
        </div>`
-       projectBox += `<div class='col-4 col-t-12'>${box}</div>`
+       projectBox += `<div class='col-4 col-t-12 mb'>${box}</div>`
        box="";
   })
   console.log(projectBox)
